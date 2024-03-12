@@ -1,0 +1,103 @@
+Simple Calculator Documentation
+
+1. Introduction:
+
+The Simple Calculator program is a command-line based calculator implemented in Python. It provides users with the ability to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. Additionally, it offers some advanced mathematical operations like exponentiation and square root calculation.
+
+2. Features:
+
+Addition: Allows users to add two numbers together.
+Subtraction: Enables users to subtract one number from another.
+Multiplication: Provides the functionality to multiply two numbers.
+Division: Allows users to divide one number by another, handling division by zero errors.
+Exponentiation: Allows users to raise a number to a specified power.
+Square Root: Computes the square root of a given number.
+Quit: Provides an option to exit the calculator program.
+3. Functions:
+
+a. add(x, y):
+
+Computes the sum of two numbers.
+Parameters:
+x: First number (float or int).
+y: Second number (float or int).
+Returns: The sum of x and y.
+b. subtract(x, y):
+
+Computes the difference between two numbers.
+Parameters:
+x: First number (float or int).
+y: Second number (float or int).
+Returns: The result of subtracting y from x.
+c. multiply(x, y):
+
+Computes the product of two numbers.
+Parameters:
+x: First number (float or int).
+y: Second number (float or int).
+Returns: The product of x and y.
+d. divide(x, y):
+
+Computes the division of two numbers.
+Parameters:
+x: Numerator (float or int).
+y: Denominator (float or int).
+Returns: The result of dividing x by y. Returns an error message if division by zero is attempted.
+e. power(x, y):
+
+Computes x raised to the power of y.
+Parameters:
+x: Base (float or int).
+y: Exponent (float or int).
+Returns: The result of raising x to the power of y.
+f. square_root(x):
+
+Computes the square root of a number.
+Parameters:
+x: Number for which square root is to be computed (float or int).
+Returns: The square root of x. Returns an error message if attempting to compute the square root of a negative number.
+g. main():
+
+Main function to execute the calculator program.
+Input: Takes user input for choosing the operation and operands.
+Output: Prints the result of the chosen operation or appropriate error messages.
+Returns: None.
+4. Usage:
+
+Run the script in a Python environment.
+Follow the on-screen prompts to select the desired operation and provide input.
+The program will display the result of the operation or any errors encountered.
+To exit the program, select the 'Quit' option.
+5. Example:
+
+mathematica
+Copy code
+Welcome to Simple Calculator!
+Select operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Power
+6. Square Root
+7. Quit
+Enter choice (1/2/3/4/5/6/7): 1
+Enter first number: 5
+Enter second number: 3
+Result: 8.0
+6. Notes:
+
+The program accepts both integer and floating-point numbers as input.
+For division, ensure the denominator is not zero to avoid division by zero errors.
+Attempting to compute the square root of a negative number will result in an error message.
+7. Dependencies:
+
+Python 3.x
+math module
+8. Author:
+
+Developed by [Your Name]
+9. Date:
+
+[Date of creation]
+This documentation provides comprehensive information about the Simple Calculator program, including its features, usage instructions, examples, and notes on potential errors. It also mentions dependencies, authorship, and creation date for reference purposes.
