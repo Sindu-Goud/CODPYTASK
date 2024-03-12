@@ -1,0 +1,77 @@
+import math  # Import math module for square root operation
+
+# Define functions for arithmetic operations
+
+def add(x, y):
+    """Function to add two numbers"""
+    return x + y
+
+def subtract(x, y):
+    """Function to subtract two numbers"""
+    return x - y
+
+def multiply(x, y):
+    """Function to multiply two numbers"""
+    return x * y
+
+def divide(x, y):
+    """Function to divide two numbers"""
+    if y == 0:
+        return "Cannot divide by zero!"
+    return x / y
+
+def exponentiate(x, y):
+    """Function to calculate the exponentiation of a number"""
+    return x ** y
+
+def square_root(x):
+    """Function to calculate the square root of a number"""
+    if x < 0:
+        return "Invalid input! Cannot find square root of a negative number."
+    return math.sqrt(x)
+
+def calculator():
+    """Function to implement the calculator functionality"""
+    print("Welcome to Simple Calculator with Advanced Features!")
+    print("Select operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exponentiation")
+    print("6. Square Root")
+    print("7. Exit")
+
+    while True:
+        # Take user input for choice of operation
+        choice = input("Enter choice (1/2/3/4/5/6/7): ")
+
+        # Check if the choice is valid
+        if choice in ('1', '2', '3', '4', '5', '6'):
+            if choice == '7':
+                print("Goodbye!")
+                break
+
+            # Take user input for numbers
+            num1 = float(input("Enter first number: "))
+            if choice != '6':
+                num2 = float(input("Enter second number: "))
+
+            # Perform the selected operation and display the result
+            if choice == '1':
+                print("Result:", add(num1, num2))
+            elif choice == '2':
+                print("Result:", subtract(num1, num2))
+            elif choice == '3':
+                print("Result:", multiply(num1, num2))
+            elif choice == '4':
+                print("Result:", divide(num1, num2))
+            elif choice == '5':
+                print("Result:", exponentiate(num1, num2))
+            elif choice == '6':
+                print("Result:", square_root(num1))
+        else:
+            print("Invalid Input! Please enter a valid choice.")
+
+# Call the calculator function to start the program
+calculator()
